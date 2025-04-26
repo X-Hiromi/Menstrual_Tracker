@@ -5,7 +5,7 @@ from firebase_admin import credentials, firestore
 
 # Initialize Firebase (Only run once)
 if not firebase_admin._apps:
-    cred = credentials.Certificate("E:\PROJECTS\MENSTRUAL_TRACKER_PROJECT\menstrual-tracker-19d68-firebase-adminsdk-fbsvc-2f31f30a11.json")  # 🔹 Replace with your Firebase JSON key path
+    cred = credentials.Certificate("E:\PROJECTS\MENSTRUAL_TRACKER_PROJECT\your_firebase_key.json")  # 🔹 Replace with your Firebase JSON key path
     firebase_admin.initialize_app(cred)
 
 db = firestore.client()
